@@ -1,0 +1,17 @@
+<div class="card-body bg-light">
+  <h5 class="card-title">{{ordi.marque}} {{ordi.modele}}</h5>
+
+  <h6 class="card-subtitle mb-2 text-muted"> <small> En stock depuis le : {{ordi.dateEntree | date: 'dd/MM/yy'}}</small>
+  </h6>
+  <br>
+  <p class="card-text">Type: {{ordi.type}} <br> Categorie : {{ordi.categorie}}</p>
+  <br>
+  <p class="card-text">Prix d'achat: {{ordi.prixAchat}} € <br> Prix de vente : {{ordi.prixVente}} €</p>
+  <br>
+  <p class="card-text">Indice de rentabilité : {{ordi.prixVente - ordi.prixAchat | number: '0.2-5'}} €</p>
+  <br>
+  <!-- Bouton modifer -->
+  <a class="btn btn-info m-2" [routerLink]="[ '/edit-ordi', ordi.id ]">Modifier</a>
+  <!-- Bouton supprimer -->
+  <a class="btn btn-danger text-white m-2" (click)="deleteOrdi(ordi.id)">Supprimer</a>
+</div>

@@ -1,0 +1,84 @@
+<br>
+<div class="bg-light">
+  <h2>Ajouter un ordinateur : </h2>
+  <!-- s'affiche au chargement -->
+  <div *ngIf="isLoading">
+    <h3 class="text-center">Veuillez Patienter</h3>
+  </div>
+
+  <!-- s'affiche une fois le component chargé -->
+  <div *ngIf="!isLoading">
+
+    <!-- formulaire Angular, fonction à lancer au submit -->
+    <form #ordiForm="ngForm" (ngSubmit)="updateOrdi()">
+
+
+      <!-- marque -->
+      <label for="marque">Marque de l'ordinateur: </label>
+
+      <div *ngFor="let marque of listeMarques" class="form-control">
+        <input type="radio" name="marque" value="{{marque}}" id="marque" required [(ngModel)]="ordi.marque"
+          #marque="ngModel"> {{marque}}
+      </div>
+      <br>
+
+      <!-- modele -->
+      <label for="modele">Modele de l'ordinateur : </label>
+
+      <input type="text" class="form-control" name="modele" id="modele" required [(ngModel)]="ordi.modele"
+        #modele="ngModel"> <br>
+      <div [hidden]="modele.valid" class="alert alert-danger">
+        Le modele de l'ordinateur est requis
+      </div>
+      <br>
+
+
+      <!-- type -->
+      <label for="type">Type de l'ordinateur : </label>
+
+      <select class="form-control" [(ngModel)]="ordi.type" required #type="ngModel" name="type" id="type">
+        <option *ngFor="let type of listeTypes" [ngValue]="type" value="{{type}}">{{type}} </option>
+      </select>
+      <br>
+      <div [hidden]="type.valid" class="alert alert-danger">
+        Le type de l'ordinateur est requis
+      </div>
+      <br>
+
+      
+      <!-- categorie -->
+      <label for="categorie">Categorie de l'ordinateur : </label>
+
+      <div *ngFor="let categorie of listeCategories" class="form-control">
+        <input  type="radio" name="categorie" value="{{categorie}}" id="categorie" required [(ngModel)]="ordi.categorie"
+          #categorie="ngModel"> {{categorie}}
+      </div>
+      <!-- <div [hidden]="categorie.valid" class="alert alert-danger">
+        La categorie de l'ordinateur est requis
+      </div> -->
+      <br>
+      
+      <!-- prix d'achat -->
+      <label for="prixAchat">Prix d'achat de l'ordinateur : </label>
+
+      <input type="number" class="form-control" name="prixAchat" id="prixAchat" required [(ngModel)]="ordi.prixAchat"
+        #prixAchat="ngModel">
+      <br>
+      <div [hidden]="prixAchat.valid" class="alert alert-danger">
+        Les prix d'achat de l'ordinateur est requis
+      </div>
+
+      <!-- prix de vente -->
+      <label for="prixVente">Prix de vente de l'ordinateur : </label>
+
+      <input type="number" class="form-control" name="prixVente" id="prixVente" required [(ngModel)]="ordi.prixVente"
+        #prixVente="ngModel">
+      <br>
+      <div [hidden]="prixVente.valid" class="alert alert-danger">
+        Le prix de vente de l'ordinateur est requis
+      </div>
+
+      <input [disabled]='!ordiForm.valid' id="submitordix" type="submit" value="Envoyer">
+    </form>
+  </div>
+</div>

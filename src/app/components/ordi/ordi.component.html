@@ -1,0 +1,33 @@
+<h3 class="text-center">Nombre d'ordinateurs en stock : {{listeOrdis?.length}}</h3>
+
+<!-- bouton add -->
+<a class="btn btn-primary m-3" routerLink="/add-ordi" id="addOrdiLink">Ajouter un ordinateur</a>
+
+<!-- s'affiche au chargement -->
+<div *ngIf="isLoading">
+  <h3 class="text-center">Veuillez Patienter</h3>
+</div>
+
+<!-- s'affiche une fois le component chargé -->
+<div *ngIf="!isLoading">
+  <!-- rend la div responsive -->
+  <div class="liste row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    <!-- card avec boucle ngFor -->
+
+    <div *ngFor="let ordi of listeOrdis" class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title ">{{ordi.marque}} {{ordi.modele}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted"> <small> En stock depuis le :
+            {{ordi.dateEntree | date: 'dd/MM/yy'}}</small></h6>
+
+        <p class="card-text">Type: {{ordi.type}} <br> Categorie : {{ordi.categorie}}</p>
+
+        <p class="card-text">Prix d'achat: {{ordi.prixAchat}} € <br> Prix de vente : {{ordi.prixVente}} €</p>
+
+        <p class="card-text">Indice de rentabilité : {{ordi.prixVente - ordi.prixAchat | number: '0.2-5'}} €</p>
+
+        <button type="button" class="btn btn-outline-primary" [routerLink]="['/ordi', ordi.id]">Details</button>
+
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,154 @@
+{
+  "ordis": [
+    {
+      "id": 1,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "Portable",
+      "categorie": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntree": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 2,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "Portable",
+      "categorie": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntree": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 3,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Apple",
+      "type": "Portable",
+      "categorie": "Gaming",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntree": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 4,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "Portable",
+      "categorie": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntree": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 6,
+      "modele": "qsdsq",
+      "marque": "Asus",
+      "type": "qsdsq",
+      "categorie": "sqdqs",
+      "dateEntree": "2020-07-02T08:22:24.805Z",
+      "prixAchat": 25,
+      "prixVente": 156
+    },
+    {
+      "id": 7,
+      "modele": "sqdsq",
+      "marque": "Apple",
+      "type": "sqdsq",
+      "categorie": "qdsq",
+      "dateEntree": "2020-07-02T08:29:37.607Z",
+      "prixAchat": 700,
+      "prixVente": 200
+    },
+    {
+      "id": 8,
+      "modele": "qsdsq",
+      "marque": "Dell",
+      "type": null,
+      "categorie": "Bureautique",
+      "dateEntree": "2020-07-02T08:41:39.013Z",
+      "prixAchat": 156,
+      "prixVente": 3125
+    },
+    {
+      "id": 9,
+      "modele": "sqdqd",
+      "marque": "Apple",
+      "type": "Tablette hybride",
+      "categorie": "Bureautique",
+      "dateEntree": "2020-07-02T10:07:48.114Z",
+      "prixAchat": 165,
+      "prixVente": 15
+    },
+    {
+      "id": 10,
+      "modele": "sqd",
+      "marque": "Apple",
+      "type": "Portable",
+      "categorie": "Gaming",
+      "dateEntree": "2020-07-02T10:11:54.948Z",
+      "prixAchat": 45,
+      "prixVente": 545
+    },
+    {
+      "id": 11,
+      "modele": "sfdsf",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Gaming",
+      "dateEntree": "2020-07-02T11:39:42.217Z",
+      "prixAchat": 1654,
+      "prixVente": 46
+    },
+    {
+      "id": 12,
+      "modele": "jfg",
+      "marque": "Dell",
+      "type": "Fixe",
+      "categorie": "Gaming",
+      "dateEntree": "2020-07-02T11:52:31.285Z",
+      "prixAchat": 23,
+      "prixVente": 32
+    },
+    {
+      "id": 13,
+      "modele": "essai",
+      "marque": "Asus",
+      "type": "Fixe",
+      "categorie": "Premier prix",
+      "dateEntree": "2020-07-02T12:04:14.278Z",
+      "prixAchat": 200,
+      "prixVente": 300
+    },
+    {
+      "id": 14,
+      "modele": "essai",
+      "marque": "Asus",
+      "type": "Fixe",
+      "categorie": "Premier prix",
+      "dateEntree": "2020-07-02T12:05:19.715Z",
+      "prixAchat": 200,
+      "prixVente": 300
+    },
+    {
+      "id": 15,
+      "modele": "essai",
+      "marque": "Asus",
+      "type": "Fixe",
+      "categorie": "Premier prix",
+      "dateEntree": "2020-07-02T12:12:44.484Z",
+      "prixAchat": 200,
+      "prixVente": 300
+    },
+    {
+      "id": 16,
+      "modele": "essai",
+      "marque": "Asus",
+      "type": "Fixe",
+      "categorie": "Premier prix",
+      "dateEntree": "2020-07-02T12:14:00.033Z",
+      "prixAchat": 200,
+      "prixVente": 300
+    }
+  ]
+}
